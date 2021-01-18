@@ -12,7 +12,7 @@ namespace WisestJobMasters.Controllers
         // GET: Jobs
         public ActionResult Random()
         {
-            var job = new Job() { JobTitle = "C# Programmer" };
+            var job = new Job() { JobTitle = "C# Programmer", JobCategory = "Computer Software" };
             return View(job);
         }
     }
