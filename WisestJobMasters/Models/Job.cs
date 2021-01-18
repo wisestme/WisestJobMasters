@@ -12,9 +12,6 @@ namespace WisestJobMasters.Models
         public string JobTitle { get; set; }
         public string JobCity { get; set; }
         public string JobCategory { get; set; }
-        public int VacancyDeadlineYear { get; set; }
-        public int VacancyDeadlineMonth { get; set; }
-        public int VacancyDeadlineDay { get; set; }
         public DateTime VacancyDeadline { get; set; }
         public bool VacancyStatus { get; set; }
     }
