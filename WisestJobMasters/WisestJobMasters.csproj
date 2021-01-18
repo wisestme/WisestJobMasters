@@ -182,6 +182,10 @@
     <Compile Include="Migrations\202101181523135_PopulateApplicants.Designer.cs">
       <DependentUpon>202101181523135_PopulateApplicants.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101181613538_ApplyAnnotationToFirstName.cs" />
+    <Compile Include="Migrations\202101181613538_ApplyAnnotationToFirstName.Designer.cs">
+      <DependentUpon>202101181613538_ApplyAnnotationToFirstName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Applicant.cs" />
@@ -273,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101181523135_PopulateApplicants.resx">
       <DependentUpon>202101181523135_PopulateApplicants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101181613538_ApplyAnnotationToFirstName.resx">
+      <DependentUpon>202101181613538_ApplyAnnotationToFirstName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -8,6 +9,7 @@ namespace WisestJobMasters.Models
     public class Applicant
     {
         public int ApplicantId { get; set; }
+        [Required]
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Gender { get; set; }
