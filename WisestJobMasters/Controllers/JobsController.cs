@@ -14,6 +14,7 @@ namespace WisestJobMasters.Controllers
         public ActionResult Random()
         {
             var job = new Job() { JobTitle = "C# Programmer", JobCategory = "Computer Software" };
+
             var applicants = new List<Applicant>
             {
                 new Applicant {FirstName = "Chijioke"},
