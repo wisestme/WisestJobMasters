@@ -1,9 +1,16 @@
-﻿@model WisestJobMasters.Models.Job
+﻿@model WisestJobMasters.ViewModels.RandomJobsViewModel
 @{
     ViewBag.Title = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.JobTitle</h2>
+<h2>@Model.Job.JobTitle</h2>
 
-<h3>@Model.JobCategory</h3>
+<h3>@Model.Job.JobCategory</h3>
+
+<ul>
+    @foreach (var applicant in Model.Applicants)
+    {
+        <li>@applicant.FirstName</li>
+    }
+</ul>
