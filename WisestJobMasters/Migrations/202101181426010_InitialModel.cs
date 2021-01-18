@@ -8,6 +8,35 @@ namespace WisestJobMasters.Migrations
         public override void Up()
         {
             CreateTable(
+                "dbo.Applicants",
+                c => new
+                    {
+                        ApplicantId = c.Int(nullable: false, identity: true),
+                        FirstName = c.String(),
+                        LastName = c.String(),
+                        Gender = c.String(),
+                        Age = c.Int(nullable: false),
+                        Email = c.String(),
+                        Phone = c.String(),
+                        YearsOfExperience = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.ApplicantId);
+            
+            CreateTable(
+                "dbo.Jobs",
+                c => new
+                    {
+                        JobId = c.Int(nullable: false, identity: true),
+                        CompanyId = c.Int(nullable: false),
+                        JobTitle = c.String(),
+                        JobCity = c.String(),
+                        JobCategory = c.String(),
+                        VacancyDeadline = c.DateTime(nullable: false),
+                        VacancyStatus = c.Boolean(nullable: false),
+                    })
+                .PrimaryKey(t => t.JobId);
+            
+            CreateTable(
                 "dbo.AspNetRoles",
                 c => new
                     {
@@ -94,6 +123,8 @@ namespace WisestJobMasters.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.Jobs");
+            DropTable("dbo.Applicants");
         }
     }
 }
