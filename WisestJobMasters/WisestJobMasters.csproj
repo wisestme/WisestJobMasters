@@ -178,6 +178,10 @@
     <Compile Include="Migrations\202101181426010_InitialModel.Designer.cs">
       <DependentUpon>202101181426010_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101181523135_PopulateApplicants.cs" />
+    <Compile Include="Migrations\202101181523135_PopulateApplicants.Designer.cs">
+      <DependentUpon>202101181523135_PopulateApplicants.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Applicant.cs" />
@@ -266,6 +270,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202101181426010_InitialModel.resx">
       <DependentUpon>202101181426010_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101181523135_PopulateApplicants.resx">
+      <DependentUpon>202101181523135_PopulateApplicants.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
